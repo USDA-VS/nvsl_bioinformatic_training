@@ -67,9 +67,7 @@ Issues:
     - E-utilities
     - NCBI Datasets
     - SRA Toolkit
-```
-python
-```
+
 E-utilities
 ```
 from Bio import Entrez

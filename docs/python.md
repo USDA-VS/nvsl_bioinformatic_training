@@ -1,7 +1,7 @@
 # Python
 - [Python Library](https://docs.python.org/3/library/intro.html)
-    - Core, Built-in and exception Functions, import not needed
-    - [Standard Library](https://docs.python.org/3/library/)
+    - [Core](https://docs.python.org/3/library/index.html), Built-in, import not needed
+    - [Standard Library](https://docs.python.org/3/library/), comes installed but needs import
     - Other
         - [Pandas](https://pandas.pydata.org/)
         - [BioPython](https://biopython.org/)
