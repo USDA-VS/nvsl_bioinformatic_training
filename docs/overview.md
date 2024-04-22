@@ -1,15 +1,3 @@
-# Getting tools
-# Anaconda package manager
-
-Other places we could be getting tools:
-- Source
-    - Dependency libraries needed
-    - Compiled manually: config, make, make install
-- GitHub
-- Container
-  - Docker
-  - Singularity/Apptainer
-
 ## New user most common troubleshooting
 
 ### Understanding space character (white space) with Linux
@@ -58,6 +46,20 @@ Other places we could be getting tools:
 ### Testing
 - Always have known, good datasets.
 - When using a script for the first time if there is a failure don't assume it can only be the script.
+ 
+###
+
+# Getting tools
+# Anaconda package manager
+
+Other places we could be getting tools:
+- Source
+    - Dependency libraries needed
+    - Compiled manually: config, make, make install
+- GitHub
+- Container
+  - Docker
+  - Singularity/Apptainer
  
 ###
 
