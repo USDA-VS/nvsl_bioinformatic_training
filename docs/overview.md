@@ -67,6 +67,10 @@ Other places we could be getting tools:
 # Examples
 
 ```
+git clone https://github.com/USDA-VS/nvsl_bioinformatic_training.git
+```
+
+```
 conda activate <env>
 ```
 ```
