@@ -12,7 +12,7 @@ Other places we could be getting tools:
 
 ## New user most common troubleshooting
 
-## Understanding space character (white space) with Linux
+# Understanding space character (white space) with Linux
 - space
     - cd mydir
     - cdmydir
@@ -21,14 +21,14 @@ Other places we could be getting tools:
     - set amount of spaces
     - \t
 
-## Newline versus carriage returns
+# Newline versus carriage returns
 - Unix: \n
 - Windows: \r
   
-## Use the tab key for auto completion
+# Use the tab key for auto completion
 - tab key for auto completion is faster but most importantly ensures correct spelling
 
-## Know where you are on the filesystem
+# Know where you are on the filesystem
 - cd
 - ls
 - pwd
@@ -36,18 +36,18 @@ Other places we could be getting tools:
 - cp
 - mv
 
-## File permissions
+# File permissions
 - Ownership:
    -  User - Group - All
 - Permission:  chmod
     - Read - Write - Execute: 4 - 2 - 1
 
-## $PATH variable
+# $PATH variable
 - Where a Linux system will look for a program
 - You need to know your PATH variable locations
 - Anaconda packages are automatically added to your PATH
 
-## File access
+# File access
 - Copying files to your local machine.
   - WinSCP/FileZilla
   - Web Interface - OnDemand
@@ -55,7 +55,7 @@ Other places we could be getting tools:
   - scp command-line
   - VS Code
 
-## Testing
+# Testing
 - Always have known, good datasets.
 - When using a script for the first time if there is a failure don't assume it can only be the script.
  
