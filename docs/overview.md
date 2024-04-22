@@ -1,5 +1,5 @@
 # Getting tools
-## - Anaconda package manager
+# Anaconda package manager
 
 Other places we could be getting tools:
 - Source
