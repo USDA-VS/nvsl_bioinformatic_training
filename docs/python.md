@@ -12,6 +12,8 @@
     - Still have functions under classes
     - `self` allows access outside defined function
 - Spaces, Tabs and Indentation
+    - set amount of spaces
+    - \t
 
 imports
 ```
