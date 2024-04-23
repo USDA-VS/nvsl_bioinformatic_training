@@ -5,10 +5,6 @@
     - cd mydir
     - cdmydir
 
-- tabs
-    - set amount of spaces
-    - \t
-
 ### Newline versus carriage returns
 - Unix: \n
 - Windows: \r
