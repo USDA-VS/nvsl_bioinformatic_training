@@ -18,6 +18,11 @@
 
 # Day 2
 
-
+- vSNP
+- Kraken
+- AMRFinder-Plus
+- Python
+- NCBI
+- Miscellaneous topics
 
 ### [HOME](../README.md)
