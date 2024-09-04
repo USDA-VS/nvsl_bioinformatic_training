@@ -56,7 +56,7 @@ Make a directory for tools
 
 Make a script
 
-    printf '#!/bin/sh\n\necho "Boom\tBoom!"' > myscript1.sh
+    printf '#!/bin/sh\n\necho "Line1\tLine2!"' > myscript1.sh
 
 Look at permissions
 
@@ -73,7 +73,7 @@ Look at permissions
 Change directory and run script
 
     cd
-    myscript1.sh
+    ./myscript1.sh
 
 Check shell type
 
@@ -99,4 +99,4 @@ Add the script's path to PATH
 
 Run script
 
-### [README](../README.md)
+### [HOME](../README.md)

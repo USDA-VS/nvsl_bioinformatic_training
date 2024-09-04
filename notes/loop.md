@@ -12,5 +12,3 @@ Read file line by line
 ```
 while read line; do echo "$line"; done < infile.txt
 ```
-
-### [README](../README.md)

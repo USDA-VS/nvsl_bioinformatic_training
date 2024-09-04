@@ -19,4 +19,4 @@ Run AMRFinderPlus and look at ouput, Look at our AMR reports
 ### Topics
 - [Trees](./trees.md)
 
-### [README](../README.md)
+### [HOME](../README.md)

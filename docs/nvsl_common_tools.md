@@ -42,4 +42,4 @@
 
 [Command-Line Basics](../docs/command-line_basics.md)
 
-### [README](../README.md)
+### [HOME](../README.md)

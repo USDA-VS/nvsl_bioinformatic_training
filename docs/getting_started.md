@@ -3,14 +3,12 @@
 1. Class Material
     - GitHub
         - https://github.com/USDA-VS/nvsl_bioinformatic_training
-2. Anaconda
+2. Miniconda
     - Install
-        - https://www.anaconda.com/download
+        - https://docs.anaconda.com/miniconda/
             - graphical installer
-            - command-line installer
-                - `bash ./Anaconda3-2023.07-2-MacOSX-x86_64.sh`
-                - restart terminal
-3. Open Terminal
+            - [command-line installer](https://docs.anaconda.com/miniconda/#quick-command-line-install)
+3. Access Terminal
     - VS Code panes
     - Terminal
 4. Transfer a file
@@ -19,4 +17,4 @@
         -  `code <filename>`
         - WSL: `explorer.exe .` to open in File Explorer
 
-### [README](../README.md)
+### [HOME](../README.md)

@@ -14,6 +14,45 @@ Kraken operates by dissecting a given DNA sequence into smaller fragments known 
 - High memory requirements
 - Not imune to database error and bias
 
-Follow [link](https://github.com/USDA-VS/vSNP3/blob/main/docs/instructions/additional_tools.md#krakenkrona) to kraken instructions
+## Install
+```
+conda create -n kraken -c conda-forge -c bioconda kraken2 krona krakentools wget pandas pigz
+```
 
-### [README](../README.md)
+After the conda install additional setup instructions are provided.
+
+[Download](https://benlangmead.github.io/aws-indexes/k2) Kraken database.
+
+There are many Databases to choose from.  If unsure and download speeds allow try the standard database.  If a smaller database is necessary Standard-8 may be a good option.  Look at site for exact database naming.
+
+Example download
+```
+cd ~; wget https://genome-idx.s3.amazonaws.com/kraken/k2_standard_08gb_20240605.tar.gz
+```
+```
+mkdir k2_standard_08gb; tar -xzf k2_standard_08gb_*.tar.gz -C k2_standard_08gb
+```
+
+If needed link database to conda environment and download taxonomy.
+
+```
+rm -rf ${HOME}/miniconda3/envs/kraken/opt/krona/taxonomy
+ln -s ${HOME}/k2_standard_08gb ${HOME}/miniconda3/envs/kraken/opt/krona/taxonomy
+cd ~/k2_standard_08gb; ktUpdateTaxonomy.sh
+```
+## Run sample
+### Kraken
+```
+db="${HOME}/k2_standard_08gb"
+sample_name=$(echo *_R1*fastq.gz | sed 's/[_.].*//')
+kraken2 --db ${db} --threads 4 --paired ERR766214_R1.fastq.gz ERR766214_R2.fastq.gz --output ${sample_name}-outputkraken.txt --report ${sample_name}-reportkraken.txt
+```
+### Krona graph
+
+```
+kreport2krona.py --intermediate-ranks -r *reportkraken.txt -o ${sample_name}.krona
+ktImportText ${sample_name}.krona -o ${sample_name}_krona.html
+rm ${sample_name}.krona
+```
+
+### [HOME](../README.md)

@@ -17,8 +17,8 @@ On Mac install xcode developer tools:
 ```bash
 xcode-select --install
 ```
-Download and install Anaconda Python 64-bit Installer<br>
-https://www.anaconda.com/distribution/#download-section<br>
+Download and install Miniconda Python 64-bit Installer<br>
+https://docs.anaconda.com/free/miniconda/#quick-command-line-install<br>
 
 Use installation defaults
 
@@ -48,6 +48,12 @@ vsnp3_download_fasta_gbk_gff_by_acc.py -fbg -a NC_045512
 
 ### Download sratoolkit
 
+Download from conda
+```zsh
+conda install bioconda::sra-tools
+```
+
+
 Download compiled binaries
 
 https://github.com/ncbi/sra-tools/wiki/01.-Downloading-SRA-Toolkit
@@ -63,15 +69,15 @@ PATH=$PATH:${HOME}/Downloads/sratoolkit.3.0.7-mac64/bin
 ```
 
 ```
-fasterq-dump -S SRR23410316
+fasterq-dump -S SRR3135071
 ```
 
 ```
-mv SRR23410316_1.fastq SRR23410316_R1.fastq
-mv SRR23410316_2.fastq SRR23410316_R2.fastq
+mv SRR3135071_1.fastq SRR3135071_R1.fastq
+mv SRR3135071_2.fastq SRR3135071_R2.fastq
 ```
 
 ```
 pigz *fastq
 ```
-### [README](../README.md)
+### [HOME](../README.md)

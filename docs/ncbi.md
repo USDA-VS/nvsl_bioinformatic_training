@@ -170,4 +170,4 @@ blastn -query <FASTA> -db nt -word_size 11 -out blast_out.txt -outfmt "6 sacc ql
 ```
 See NCBI BLAST website for remote databases available
 
-### [README](../README.md)
+### [HOME](../README.md)

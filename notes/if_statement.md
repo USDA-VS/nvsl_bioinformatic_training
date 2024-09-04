@@ -13,5 +13,3 @@ n=m
 ```
 for d in ./*; do if [[ ! -n $(echo ./${d}/*pdf) ]]; then echo "$d"; fi; done 2> /dev/null
 ```
-
-### [README](../README.md)

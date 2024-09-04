@@ -12,8 +12,6 @@
     - Still have functions under classes
     - `self` allows access outside defined function
 - Spaces, Tabs and Indentation
-    - set amount of spaces
-    - \t
 
 imports
 ```
@@ -157,20 +155,4 @@ for seq_record in SeqIO.parse('assembly.fasta', "fasta"):
 
 ```
 
-Make change to repo and push so others can pull changes.
-
-Make dataframe from Excel file
-```
-import pandas as pd
-in_file = "metadata.xlsx"
-df = pd.read_excel(in_file)
-d = df.to_dict('list')
-keys = d['sample name']
-values = d['metadata']
-dd = dict(zip(keys, values))
-dd['a']
-```
-
-Debug, see get_meta_demo.py, [link](../data/sample_naming_and_metadata/sample_naming.md)
-
-### [README](../README.md)
+### [HOME](../README.md)
