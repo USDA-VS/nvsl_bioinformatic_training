@@ -55,4 +55,22 @@ ktImportText ${sample_name}.krona -o ${sample_name}_krona.html
 rm ${sample_name}.krona
 ```
 
+### Clean reads
+
+This will extract all 533,222 reads of 77643 ID using SRR6856085 as example
+```
+taxid="77643"
+name=`echo *_R1*.fastq.gz | head -1 | sed 's/[._].*//'`
+```
+```
+(extract_kraken_reads.py \
+    -k kraken/${name}_outputkraken.txt \
+    -s1 ${name}_R1.fastq.gz \
+    -s2 ${name}_R2.fastq.gz \
+    -t ${taxid} \
+    -o ${name}_tax${taxid}_R1.fastq \
+    -o2 ${name}_tax${taxid}_R2.fastq \
+    --fastq-output 2>&1) | grep -E "^(PROGRAM|>>|\t.*read IDs saved|\t.*reads printed|\tGenerated)" | grep -v "mill reads\|read IDs found\|million reads" | tee ${name}_tax${taxid}_output.log
+```
+
 ### [HOME](../README.md)
